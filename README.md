@@ -10,5 +10,10 @@ It was made with Microsoft <a href="https://visualstudio.microsoft.com/downloads
 | ---   | - |
 | Windows 10 And Higher? | Yes |
 | Lua? | Yes |
-| LuaC? | No |
-| Script Hub? | Adding |
+| LuaC? | Yes |
+| Open Script From File? | No |
+# Help
+- Q: Why does my antivirus detect CryT as a virus?
+- A: Its cause of the nature of the exploit that trigger your antivirus.
+- Q: Is it ok that new files appear in the folder?
+- A: Yes, its the API downloading necessary files and a new API if the current one is patched.
