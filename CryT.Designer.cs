@@ -186,7 +186,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(196, 15);
             this.textBox7.TabIndex = 10;
-            this.textBox7.Text = "And Verified Studios";
+            this.textBox7.Text = "And Lipex Studios";
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // fastColoredTextBox1
@@ -210,7 +210,6 @@
             this.fastColoredTextBox1.CharWidth = 10;
             this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.fastColoredTextBox1.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.fastColoredTextBox1.IsReplaceMode = false;
             this.fastColoredTextBox1.Location = new System.Drawing.Point(11, 50);
             this.fastColoredTextBox1.Name = "fastColoredTextBox1";

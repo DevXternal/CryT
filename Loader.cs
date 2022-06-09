@@ -73,8 +73,9 @@ namespace CryT
 
         private void siticoneButton5_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MessageBox.Show("bruh", "e");
+            Hide();
+            LuaC ctlc = new LuaC();
+            ctlc.Show();
         }
     }
 }

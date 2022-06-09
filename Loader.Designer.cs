@@ -42,7 +42,6 @@
             this.siticoneDragControl3 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.siticoneButton5 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +88,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CryT Launcher 3.1";
+            this.label1.Text = "CryT Launcher 3.2";
             // 
             // siticoneButton3
             // 
@@ -179,16 +178,6 @@
             this.linkLabel1.Text = "Exploit made possible with WeAreDevs API";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(-3, 276);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(458, 68);
-            this.webBrowser1.TabIndex = 9;
-            this.webBrowser1.Url = new System.Uri("https://raw.githubusercontent.com/Obesto/CryT/main/Live%20Server%20MSG", System.UriKind.Absolute);
-            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
-            // 
             // siticoneButton5
             // 
             this.siticoneButton5.CheckedState.Parent = this.siticoneButton5;
@@ -202,7 +191,7 @@
             this.siticoneButton5.ShadowDecoration.Parent = this.siticoneButton5;
             this.siticoneButton5.Size = new System.Drawing.Size(294, 30);
             this.siticoneButton5.TabIndex = 10;
-            this.siticoneButton5.Text = "Launch CryT";
+            this.siticoneButton5.Text = "Launch CryT LuaC";
             this.siticoneButton5.Click += new System.EventHandler(this.siticoneButton5_Click);
             // 
             // Loader
@@ -212,7 +201,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(452, 344);
             this.Controls.Add(this.siticoneButton5);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.siticoneButton4);
             this.Controls.Add(this.siticoneButton2);
@@ -246,7 +234,6 @@
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl3;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton5;
     }
 }
