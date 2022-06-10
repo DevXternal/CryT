@@ -17,3 +17,8 @@ It was made with Microsoft <a href="https://visualstudio.microsoft.com/downloads
 - A: Its cause of the nature of the exploit that trigger your antivirus.
 - Q: Is it ok that new files appear in the folder?
 - A: Yes, its the API downloading necessary files and a new API if the current one is patched.
+# Previews
+
+<img src="/Assets/CryTL.png" title="Launcher">
+<img src="/Assets/CryTLE.png" title="Executor">
+<img src="/Assets/CryTLC.png" title="LuaC Executor">
