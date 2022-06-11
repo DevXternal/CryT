@@ -49,13 +49,6 @@ namespace CryT
 
         }
 
-        private void siticoneButton2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            VerisonInformation vi = new VerisonInformation();
-            vi.Show();
-        }
-
         private void siticoneButton4_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://discord.gg/x35EwdRzRy");
@@ -66,16 +59,16 @@ namespace CryT
             System.Diagnostics.Process.Start("https://wearedevs.net/d/Exploit%20API");
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-
-        }
-
         private void siticoneButton5_Click(object sender, EventArgs e)
         {
             Hide();
             LuaC ctlc = new LuaC();
             ctlc.Show();
+        }
+
+        private void siticoneButton2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DevXternal/CryT");
         }
     }
 }

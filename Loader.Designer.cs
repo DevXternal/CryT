@@ -37,12 +37,12 @@
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneDragControl2 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.siticoneDragControl3 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.siticoneButton5 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +88,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CryT Launcher 3.2";
+            this.label1.Text = "CryT Launcher 3.3";
             // 
             // siticoneButton3
             // 
@@ -98,7 +98,7 @@
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton3.ForeColor = System.Drawing.Color.White;
             this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Location = new System.Drawing.Point(74, 183);
+            this.siticoneButton3.Location = new System.Drawing.Point(74, 142);
             this.siticoneButton3.Name = "siticoneButton3";
             this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
             this.siticoneButton3.Size = new System.Drawing.Size(294, 30);
@@ -118,29 +118,13 @@
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
             this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Location = new System.Drawing.Point(74, 145);
+            this.siticoneButton1.Location = new System.Drawing.Point(74, 106);
             this.siticoneButton1.Name = "siticoneButton1";
             this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
             this.siticoneButton1.Size = new System.Drawing.Size(294, 30);
             this.siticoneButton1.TabIndex = 5;
             this.siticoneButton1.Text = "Launch CryT";
             this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click_1);
-            // 
-            // siticoneButton2
-            // 
-            this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
-            this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
-            this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Location = new System.Drawing.Point(74, 107);
-            this.siticoneButton2.Name = "siticoneButton2";
-            this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
-            this.siticoneButton2.Size = new System.Drawing.Size(294, 30);
-            this.siticoneButton2.TabIndex = 6;
-            this.siticoneButton2.Text = "Version Info";
-            this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton2_Click);
             // 
             // siticoneDragControl2
             // 
@@ -186,7 +170,7 @@
             this.siticoneButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton5.ForeColor = System.Drawing.Color.White;
             this.siticoneButton5.HoveredState.Parent = this.siticoneButton5;
-            this.siticoneButton5.Location = new System.Drawing.Point(74, 222);
+            this.siticoneButton5.Location = new System.Drawing.Point(74, 178);
             this.siticoneButton5.Name = "siticoneButton5";
             this.siticoneButton5.ShadowDecoration.Parent = this.siticoneButton5;
             this.siticoneButton5.Size = new System.Drawing.Size(294, 30);
@@ -194,16 +178,32 @@
             this.siticoneButton5.Text = "Launch CryT LuaC";
             this.siticoneButton5.Click += new System.EventHandler(this.siticoneButton5_Click);
             // 
+            // siticoneButton2
+            // 
+            this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
+            this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
+            this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
+            this.siticoneButton2.Location = new System.Drawing.Point(74, 214);
+            this.siticoneButton2.Name = "siticoneButton2";
+            this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
+            this.siticoneButton2.Size = new System.Drawing.Size(294, 30);
+            this.siticoneButton2.TabIndex = 11;
+            this.siticoneButton2.Text = "Repository";
+            this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton2_Click);
+            // 
             // Loader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(452, 344);
+            this.Controls.Add(this.siticoneButton2);
             this.Controls.Add(this.siticoneButton5);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.siticoneButton4);
-            this.Controls.Add(this.siticoneButton2);
             this.Controls.Add(this.siticoneButton1);
             this.Controls.Add(this.siticoneButton3);
             this.Controls.Add(this.panel1);
@@ -229,11 +229,11 @@
         private Siticone.UI.WinForms.SiticoneButton siticoneButton3;
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl2;
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl3;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton5;
+        private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
     }
 }
