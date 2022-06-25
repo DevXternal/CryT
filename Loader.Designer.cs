@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loader));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
@@ -43,41 +41,21 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.siticoneButton5 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneButton6 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneButton7 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.siticoneButton6);
+            this.panel1.Controls.Add(this.siticoneButton7);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-3, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(458, 29);
+            this.panel1.Size = new System.Drawing.Size(458, 30);
             this.panel1.TabIndex = 0;
-            // 
-            // button4
-            // 
-            this.button4.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.button4.Location = new System.Drawing.Point(424, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(21, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "X";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.button5.Location = new System.Drawing.Point(399, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(21, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "-";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -88,13 +66,13 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CryT Launcher 3.3";
+            this.label1.Text = "CryT Launcher 3.4";
             // 
             // siticoneButton3
             // 
             this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
             this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
-            this.siticoneButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.siticoneButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton3.ForeColor = System.Drawing.Color.White;
             this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
@@ -114,7 +92,7 @@
             // 
             this.siticoneButton1.CheckedState.Parent = this.siticoneButton1;
             this.siticoneButton1.CustomImages.Parent = this.siticoneButton1;
-            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
             this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
@@ -136,9 +114,10 @@
             // 
             // siticoneButton4
             // 
+            this.siticoneButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneButton4.CheckedState.Parent = this.siticoneButton4;
             this.siticoneButton4.CustomImages.Parent = this.siticoneButton4;
-            this.siticoneButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.siticoneButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton4.ForeColor = System.Drawing.Color.White;
             this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
@@ -166,7 +145,7 @@
             // 
             this.siticoneButton5.CheckedState.Parent = this.siticoneButton5;
             this.siticoneButton5.CustomImages.Parent = this.siticoneButton5;
-            this.siticoneButton5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.siticoneButton5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton5.ForeColor = System.Drawing.Color.White;
             this.siticoneButton5.HoveredState.Parent = this.siticoneButton5;
@@ -182,7 +161,7 @@
             // 
             this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
             this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
-            this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton2.ForeColor = System.Drawing.Color.White;
             this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
@@ -194,11 +173,43 @@
             this.siticoneButton2.Text = "Repository";
             this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton2_Click);
             // 
+            // siticoneButton6
+            // 
+            this.siticoneButton6.CheckedState.Parent = this.siticoneButton6;
+            this.siticoneButton6.CustomImages.Parent = this.siticoneButton6;
+            this.siticoneButton6.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton6.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton6.HoveredState.Parent = this.siticoneButton6;
+            this.siticoneButton6.Location = new System.Drawing.Point(395, 3);
+            this.siticoneButton6.Name = "siticoneButton6";
+            this.siticoneButton6.ShadowDecoration.Parent = this.siticoneButton6;
+            this.siticoneButton6.Size = new System.Drawing.Size(21, 23);
+            this.siticoneButton6.TabIndex = 12;
+            this.siticoneButton6.Text = "-";
+            this.siticoneButton6.Click += new System.EventHandler(this.siticoneButton6_Click);
+            // 
+            // siticoneButton7
+            // 
+            this.siticoneButton7.CheckedState.Parent = this.siticoneButton7;
+            this.siticoneButton7.CustomImages.Parent = this.siticoneButton7;
+            this.siticoneButton7.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton7.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton7.HoveredState.Parent = this.siticoneButton7;
+            this.siticoneButton7.Location = new System.Drawing.Point(422, 3);
+            this.siticoneButton7.Name = "siticoneButton7";
+            this.siticoneButton7.ShadowDecoration.Parent = this.siticoneButton7;
+            this.siticoneButton7.Size = new System.Drawing.Size(21, 23);
+            this.siticoneButton7.TabIndex = 13;
+            this.siticoneButton7.Text = "X";
+            this.siticoneButton7.Click += new System.EventHandler(this.siticoneButton7_Click);
+            // 
             // Loader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(452, 344);
             this.Controls.Add(this.siticoneButton2);
             this.Controls.Add(this.siticoneButton5);
@@ -224,8 +235,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton3;
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
@@ -235,5 +244,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton5;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
+        private Siticone.UI.WinForms.SiticoneButton siticoneButton6;
+        private Siticone.UI.WinForms.SiticoneButton siticoneButton7;
     }
 }

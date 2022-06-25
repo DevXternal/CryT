@@ -22,19 +22,9 @@ namespace CryT
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
         private void siticoneButton3_Click(object sender, EventArgs e)
         {
-         System.Diagnostics.Process.Start("https://discord.com/invite/GZxwnRt8k4");
+         System.Diagnostics.Process.Start("https://discord.gg/uCFrVKRjZz");
         }
 
         private void siticoneButton1_Click_1(object sender, EventArgs e)
@@ -69,6 +59,16 @@ namespace CryT
         private void siticoneButton2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/DevXternal/CryT");
+        }
+
+        private void siticoneButton7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void siticoneButton6_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

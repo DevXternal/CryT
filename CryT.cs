@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,16 +23,6 @@ namespace CryT
         private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
         }
 
         private void CryT_Load(object sender, EventArgs e)
@@ -78,12 +69,6 @@ namespace CryT
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Loader loader = new Loader();
-            loader.Show();
-        }
 
         private void siticoneButton1_Click(object sender, EventArgs e)
         {
@@ -92,12 +77,12 @@ namespace CryT
 
         private void siticoneButton2_Click(object sender, EventArgs e)
         {
-            fastColoredTextBox1.Clear();
+            LuaCode.Clear();
         }
 
         private void siticoneButton3_Click(object sender, EventArgs e)
         {
-            module.SendLuaScript(fastColoredTextBox1.Text);
+            module.SendLuaScript(LuaCode.Text);
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -113,6 +98,46 @@ namespace CryT
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://discord.gg/x35EwdRzRy");
+        }
+
+        private void siticoneButton4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Loader loader = new Loader();
+            loader.Show();
+        }
+
+        private void siticoneButton5_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void siticoneButton6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void siticoneButton7_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                using (Stream s = File.Open(saveFileDialog1.FileName, FileMode.CreateNew))
+                using (StreamWriter sw = new StreamWriter(s))
+                {
+                    sw.WriteLine(LuaCode.Text);
+                }
+            }
+        }
+
+        private void siticoneButton8_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                openFileDialog1.Title = "Choose script.";
+                LuaCode.Text = File.ReadAllText(openFileDialog1.FileName);
+            }
         }
     }
 }
