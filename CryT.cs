@@ -27,7 +27,9 @@ namespace CryT
 
         private void CryT_Load(object sender, EventArgs e)
         {
-
+            listBox1.Items.Clear();
+            Functions.PopulateListBox(listBox1, "./Scripts", "*.txt");
+            Functions.PopulateListBox(listBox1, "./Scripts", "*.lua");
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -100,13 +102,6 @@ namespace CryT
             System.Diagnostics.Process.Start("https://discord.gg/x35EwdRzRy");
         }
 
-        private void siticoneButton4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Loader loader = new Loader();
-            loader.Show();
-        }
-
         private void siticoneButton5_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
@@ -138,6 +133,23 @@ namespace CryT
                 openFileDialog1.Title = "Choose script.";
                 LuaCode.Text = File.ReadAllText(openFileDialog1.FileName);
             }
+        }
+
+        private void siticoneButton4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            Functions.PopulateListBox(listBox1, "./Scripts", "*.txt");
+            Functions.PopulateListBox(listBox1, "./Scripts", "*.lua");
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LuaCode.Text = File.ReadAllText($"./Scripts/{listBox1.SelectedItem}");
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("you found an easter egg!!", ":O");
         }
     }
 }

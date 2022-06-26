@@ -16,7 +16,7 @@ namespace CryT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Loader());
+            Application.Run(new CryT());
         }
     }
 }

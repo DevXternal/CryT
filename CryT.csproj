@@ -57,7 +57,7 @@
     <ManifestKeyFile>CryT_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>New-logo-for-cryt.ico</ApplicationIcon>
+    <ApplicationIcon>New-logo-for-cryt-removebg-preview.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -100,28 +100,11 @@
     <Compile Include="CryT.Designer.cs">
       <DependentUpon>CryT.cs</DependentUpon>
     </Compile>
-    <Compile Include="LuaC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LuaC.Designer.cs">
-      <DependentUpon>LuaC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Loader.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Loader.Designer.cs">
-      <DependentUpon>Loader.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CryT.resx">
       <DependentUpon>CryT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LuaC.resx">
-      <DependentUpon>LuaC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Loader.resx">
-      <DependentUpon>Loader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,7 +143,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="New-logo-for-cryt.ico" />
+    <Content Include="New-logo-for-cryt-removebg-preview.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
